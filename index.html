@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú corrido de hoy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="brand">
+          <img
+            class="brand-logo"
+            src="assets/logo.jpeg"
+            alt=""
+            onerror="this.classList.add('is-hidden'); this.nextElementSibling.classList.remove('is-hidden');"
+          />
+          <div class="brand-fallback is-hidden" aria-hidden="true" id="logo-fallback">MC</div>
+          <div>
+            <p class="eyebrow" id="brand-tagline">Cocina casera</p>
+            <h1 id="business-name">El Pilar del Sabor</h1>
+          </div>
+        </div>
+
+        <div class="today-card" aria-label="Resumen del menu de hoy">
+          <p class="date-label" id="today-date">Hoy</p>
+          <h2 id="hero-title">Menú de hoy</h2>
+          <p class="includes" id="menu-includes">
+            Incluye entrada, arroz o spaghetti, guisado, agua del día y tortillas.
+          </p>
+          <div class="price-row">
+            <span class="price-label" id="price-label">Precio</span>
+            <strong id="menu-price">$95</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-board" aria-label="Opciones del menú corrido">
+        <header class="section-header">
+          <p class="eyebrow" id="courses-eyebrow">Elige por tiempo</p>
+          <h2 id="courses-title">Comida corrida</h2>
+        </header>
+
+        <div class="course-grid" id="course-grid"></div>
+      </section>
+
+      <section class="notes-panel" aria-label="Notas del servicio">
+        <div>
+          <p class="eyebrow" id="service-eyebrow">Servicio</p>
+          <h2 id="service-title">Hasta agotar existencias</h2>
+        </div>
+        <p id="service-notes">
+          El menu puede cambiar durante el dia segun disponibilidad. Pregunta por
+          extras y pedidos para llevar.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
